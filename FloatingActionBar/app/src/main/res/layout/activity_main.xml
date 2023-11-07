@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/idFABHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="16dp"
+            app:tint="@color/white"
+            android:contentDescription="@string/app_name"
+            android:padding="4dp"
+            android:src="@drawable/baseline_home_24"
+            android:visibility="gone"
+            app:backgroundTint="@color/black"
+            />
+
+        <!--on below line we are creating a home fab
+        and setting its visibility to gone-->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/idFABSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/black"
+            android:contentDescription="@string/app_name"
+            android:padding="4dp"
+            android:src="@drawable/baseline_settings_24"
+            android:visibility="gone"
+            app:backgroundTint="@color/black"
+            app:tint="@color/white" />
+
+        <!--on below line we are creating a settings fab
+        and setting its visibility to gone-->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/idFABAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/black"
+            android:contentDescription="@string/app_name"
+            android:padding="4dp"
+            android:src="@drawable/baseline_add_reaction_24"
+            app:backgroundTint="@color/black"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
